@@ -1,0 +1,452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		129CA54926B97F3B003429A1 /* BaseCandleStickChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129CA54826B97F3B003429A1 /* BaseCandleStickChartView.swift */; };
+		129CA54B26B980B7003429A1 /* ChartIntervalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129CA54A26B980B7003429A1 /* ChartIntervalType.swift */; };
+		12CA184726B58E6C00F88A6A /* FileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CA184626B58E6C00F88A6A /* FileReader.swift */; };
+		12CA184926B5911200F88A6A /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CA184826B5911200F88A6A /* ChartView.swift */; };
+		12CA184F26B68F3000F88A6A /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 12CA184E26B68F3000F88A6A /* Charts */; };
+		368CCB6F24E1155D004798ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368CCB6E24E1155D004798ED /* AppDelegate.swift */; };
+		368CCB7124E1155D004798ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368CCB7024E1155D004798ED /* SceneDelegate.swift */; };
+		368CCB7824E1155E004798ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 368CCB7724E1155E004798ED /* Assets.xcassets */; };
+		368CCB7B24E1155E004798ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 368CCB7924E1155E004798ED /* LaunchScreen.storyboard */; };
+		368CCB8F24E11A0D004798ED /* responseQuotesMonth.json in Resources */ = {isa = PBXBuildFile; fileRef = 368CCB8D24E11A0C004798ED /* responseQuotesMonth.json */; };
+		368CCB9024E11A0D004798ED /* responseQuotesWeek.json in Resources */ = {isa = PBXBuildFile; fileRef = 368CCB8E24E11A0C004798ED /* responseQuotesWeek.json */; };
+		368CCB9824E12167004798ED /* ChartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368CCB9724E12167004798ED /* ChartModel.swift */; };
+		368CCBD624E14708004798ED /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368CCBD424E14708004798ED /* ChartViewController.swift */; };
+		368CCBD924E14732004798ED /* ChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368CCBD824E14732004798ED /* ChartViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		12CA184126B58C0900F88A6A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		129CA54826B97F3B003429A1 /* BaseCandleStickChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCandleStickChartView.swift; sourceTree = "<group>"; };
+		129CA54A26B980B7003429A1 /* ChartIntervalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartIntervalType.swift; sourceTree = "<group>"; };
+		12CA184626B58E6C00F88A6A /* FileReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileReader.swift; sourceTree = "<group>"; };
+		12CA184826B5911200F88A6A /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		368CCB6B24E1155D004798ED /* StockChartTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockChartTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		368CCB6E24E1155D004798ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		368CCB7024E1155D004798ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		368CCB7724E1155E004798ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		368CCB7A24E1155E004798ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		368CCB7C24E1155E004798ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		368CCB8D24E11A0C004798ED /* responseQuotesMonth.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = responseQuotesMonth.json; sourceTree = "<group>"; };
+		368CCB8E24E11A0C004798ED /* responseQuotesWeek.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = responseQuotesWeek.json; sourceTree = "<group>"; };
+		368CCB9724E12167004798ED /* ChartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartModel.swift; sourceTree = "<group>"; };
+		368CCBD424E14708004798ED /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+		368CCBD824E14732004798ED /* ChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		368CCB6824E1155D004798ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12CA184F26B68F3000F88A6A /* Charts in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		129CA54626B97E1B003429A1 /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				368CCBD424E14708004798ED /* ChartViewController.swift */,
+				368CCBD824E14732004798ED /* ChartViewModel.swift */,
+				368CCB9724E12167004798ED /* ChartModel.swift */,
+				129CA54A26B980B7003429A1 /* ChartIntervalType.swift */,
+				129CA54726B97F21003429A1 /* Views */,
+			);
+			path = Chart;
+			sourceTree = "<group>";
+		};
+		129CA54726B97F21003429A1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				129CA54826B97F3B003429A1 /* BaseCandleStickChartView.swift */,
+				12CA184826B5911200F88A6A /* ChartView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		12CA183826B5868200F88A6A /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				368CCB6E24E1155D004798ED /* AppDelegate.swift */,
+				368CCB7024E1155D004798ED /* SceneDelegate.swift */,
+				368CCB7924E1155E004798ED /* LaunchScreen.storyboard */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		12CA183926B586C100F88A6A /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				129CA54626B97E1B003429A1 /* Chart */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		12CA184526B58E3F00F88A6A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				12CA184626B58E6C00F88A6A /* FileReader.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		368CCB6224E1155D004798ED = {
+			isa = PBXGroup;
+			children = (
+				368CCB6D24E1155D004798ED /* StockChartTest */,
+				368CCB6C24E1155D004798ED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		368CCB6C24E1155D004798ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				368CCB6B24E1155D004798ED /* StockChartTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		368CCB6D24E1155D004798ED /* StockChartTest */ = {
+			isa = PBXGroup;
+			children = (
+				12CA183826B5868200F88A6A /* Application */,
+				12CA183926B586C100F88A6A /* Modules */,
+				12CA184526B58E3F00F88A6A /* Common */,
+				368CCB8C24E119DC004798ED /* Resources */,
+			);
+			path = StockChartTest;
+			sourceTree = "<group>";
+		};
+		368CCB8C24E119DC004798ED /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				368CCB7C24E1155E004798ED /* Info.plist */,
+				368CCB7724E1155E004798ED /* Assets.xcassets */,
+				368CCB8D24E11A0C004798ED /* responseQuotesMonth.json */,
+				368CCB8E24E11A0C004798ED /* responseQuotesWeek.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		368CCB6A24E1155D004798ED /* StockChartTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 368CCB7F24E1155E004798ED /* Build configuration list for PBXNativeTarget "StockChartTest" */;
+			buildPhases = (
+				368CCB6724E1155D004798ED /* Sources */,
+				368CCB6824E1155D004798ED /* Frameworks */,
+				368CCB6924E1155D004798ED /* Resources */,
+				12CA184126B58C0900F88A6A /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StockChartTest;
+			packageProductDependencies = (
+				12CA184E26B68F3000F88A6A /* Charts */,
+			);
+			productName = CandleStick;
+			productReference = 368CCB6B24E1155D004798ED /* StockChartTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		368CCB6324E1155D004798ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1250;
+				ORGANIZATIONNAME = "Micro-B";
+				TargetAttributes = {
+					368CCB6A24E1155D004798ED = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 368CCB6624E1155D004798ED /* Build configuration list for PBXProject "StockChartTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 368CCB6224E1155D004798ED;
+			packageReferences = (
+				12CA184D26B68F3000F88A6A /* XCRemoteSwiftPackageReference "Charts" */,
+			);
+			productRefGroup = 368CCB6C24E1155D004798ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				368CCB6A24E1155D004798ED /* StockChartTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		368CCB6924E1155D004798ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				368CCB7B24E1155E004798ED /* LaunchScreen.storyboard in Resources */,
+				368CCB9024E11A0D004798ED /* responseQuotesWeek.json in Resources */,
+				368CCB7824E1155E004798ED /* Assets.xcassets in Resources */,
+				368CCB8F24E11A0D004798ED /* responseQuotesMonth.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		368CCB6724E1155D004798ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				368CCB6F24E1155D004798ED /* AppDelegate.swift in Sources */,
+				12CA184926B5911200F88A6A /* ChartView.swift in Sources */,
+				368CCBD624E14708004798ED /* ChartViewController.swift in Sources */,
+				368CCB9824E12167004798ED /* ChartModel.swift in Sources */,
+				368CCB7124E1155D004798ED /* SceneDelegate.swift in Sources */,
+				12CA184726B58E6C00F88A6A /* FileReader.swift in Sources */,
+				129CA54B26B980B7003429A1 /* ChartIntervalType.swift in Sources */,
+				129CA54926B97F3B003429A1 /* BaseCandleStickChartView.swift in Sources */,
+				368CCBD924E14732004798ED /* ChartViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		368CCB7924E1155E004798ED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				368CCB7A24E1155E004798ED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		368CCB7D24E1155E004798ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		368CCB7E24E1155E004798ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		368CCB8024E1155E004798ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StockChartTest/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.arohak.chart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		368CCB8124E1155E004798ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StockChartTest/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.arohak.chart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		368CCB6624E1155D004798ED /* Build configuration list for PBXProject "StockChartTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				368CCB7D24E1155E004798ED /* Debug */,
+				368CCB7E24E1155E004798ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		368CCB7F24E1155E004798ED /* Build configuration list for PBXNativeTarget "StockChartTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				368CCB8024E1155E004798ED /* Debug */,
+				368CCB8124E1155E004798ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		12CA184D26B68F3000F88A6A /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts.git";
+			requirement = {
+				kind = exactVersion;
+				version = 3.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		12CA184E26B68F3000F88A6A /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 12CA184D26B68F3000F88A6A /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = Charts;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 368CCB6324E1155D004798ED /* Project object */;
+}
